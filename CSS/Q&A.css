@@ -1,0 +1,75 @@
+
+h1,h2,h3,h4,h5,h6{/*標題*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 575;
+    font-size: 39;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{/*把整個網站的btn都設定成這個格式,所以不用特地寫在那一part,要改的話在指名part*/
+    background: #F05F5C;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 500px
+}
+header{
+    margin-bottom: 30px;
+}
+#firstBlock{
+    border-top: solid 1px #c9c9c9; /*solid是那條線 1px是他的粗細*/
+    padding-top: 10px;
+}
+#firstBlock p{
+    font-size: 17px;    
+    font-weight: 550;
+    line-height: 1.5;
+}
+#firstBlock .join_qa_list{
+    padding-bottom: 30px;
+}
+img{
+    max-width: 100%; /*以防圖片比例爆掉*/ 
+}
+header nav img{
+    width: 165px;
+}
+header li{
+    margin: 0 10px; /*第一個是nav的menu在手機間隔的高度,二是電腦menu中間的間隔*/
+}
+p{
+    color: #382d2d;
+}
+p.lead{
+    color: black;
+}
+footer{
+    border-top: solid 1px #c9c9c9; /*solid是那條線 1px是他的粗細*/
+    padding: 80px 0px;
+}
+footer img{
+    width: 200px;
+    margin-bottom: 26px; /*讓底部可以再多滑一點點的空間減少壓迫感*/
+}
+footer h4{
+    margin-bottom: 26px;
+}
+footer p a{
+    color: #F05F5C;
+}
+footer p{
+    font-weight: 500;
+}
+footer ul{
+    list-style: none; /*把ul顯示的．去掉*/
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a{
+   color: #707070;
+}

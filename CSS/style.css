@@ -1,0 +1,163 @@
+/*負責設定格式*/
+
+h1,h2,h3,h4,h5,h6{/*標題*/
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Roboto', sans-serif;
+}
+
+#firstBlock .jumbotron{
+    height: 70vh;
+    margin-bottom: 0px;
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*橫向 垂直*/
+  
+    /* width: 100%; */
+    
+}
+#firstBlock h1{
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* padding-bottom: 300; */
+}
+#firstBlock p{
+    font-size: 30px;
+    font-weight: 400;
+}
+.btn{/*把整個網站的btn都設定成這個格式,所以不用特地寫在那一part,要改的話在指名part*/
+    background: #F05F5C;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 500px
+}
+
+#firstBlock .container{ /*置中(搜尋how to vertically center div)*/
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#firstBlock .img{
+    width: 500px;
+}
+img{
+    max-width: 100%; /*以防圖片比例爆掉*/ 
+}
+header nav img{
+    width: 165px;
+}
+header li{
+    margin: 0 10px; /*第一個是nav的menu在手機間隔的高度,二是電腦menu中間的間隔*/
+}
+p{
+    color: #382d2d;
+}
+p.lead{
+    color: black;
+}
+#second{
+    padding: 30px 0px;
+}
+#second h2{
+    font-size: 35px;
+    line-height: 1.5;
+}
+#second img{
+    width: 100px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+#third img{
+    width: 350px;
+    height: 162px;
+}
+#third{
+    padding: 80px 0px;
+    background: rgb(248,248,248);
+}
+#third .upper{
+    position: relative;
+}
+#third .innerText{
+    position: absolute; /*讓他的位置對應到relative*/
+    bottom: 0px;
+    left: 24px;
+}
+#third .innerText span{
+    background: rgba(192, 40, 40, 0.1); /*ˇ第四個是透明度*/
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+#third .innerText h5{
+    font-size: 22px;
+    margin-top: 5px;
+}
+#third .lower h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+#third .lower i{
+    margin-right: 6px;
+}
+#third .outer{
+    background: white;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+}
+#third .lower{
+    padding: 6px 20px 20px 20px;
+}
+#third a{
+    color :black;
+}
+#third a:hover{ /*滑鼠碰到會淡掉的功能*/
+    text-decoration: none;
+}
+#email{
+    padding: 80px 0px;
+}
+#email h3{
+    margin-bottom: 30px;
+}
+footer{
+    border-top: solid 1px #c9c9c9; /*solid是那條線 1px是他的粗細*/
+    padding: 80px 0px;
+}
+footer img{
+    width: 200px;
+    margin-bottom: 26px; /*讓底部可以再多滑一點點的空間減少壓迫感*/
+}
+footer h4{
+    margin-bottom: 26px;
+}
+footer p a{
+    color: #F05F5C;
+}
+footer p{
+    font-weight: 500;
+}
+footer ul{
+    list-style: none; /*把ul顯示的．去掉*/
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a{
+   color: #707070;
+}
+
+@media only screen and (max-width:768px){ /*處理畫面比例在768的破圖（解決某些手機開起來跑版）*/
+    #third .outer{
+        margin-bottom: 54px;
+    }
+    #third .outer img{
+        width: 100%;
+    }
+}

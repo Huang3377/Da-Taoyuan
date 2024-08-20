@@ -1,0 +1,51 @@
+h1,h2,h3,h4,h5,h6{/*標題*/
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Roboto', sans-serif;
+}
+header nav img{
+    width: 165px;
+}
+header li{
+    margin: 0 10px; /*第一個是nav的menu在手機間隔的高度,二是電腦menu中間的間隔*/
+}
+#firstBlock{
+    border-top: solid 1px #c9c9c9; /*solid是那條線 1px是他的粗細*/
+    padding-top: 10px;
+}
+#body{
+	position: relative;	/*相對定位*/
+	height: 100%;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	
+}
+
+h1{
+    margin-bottom: 50px;
+    margin-top: 30px;
+	
+}
+#map{
+	position: absolute;
+	top: 35%;	/*地圖佔頁面的3/4，即 頁面高 - 地圖高 = 定位點高度 (100%-75%=25%)*/ 
+	left: 50;
+    height: 75%;	/*地圖高*/
+    width: 100vw;
+	border-radius: 100%;
+}
+@media only screen and (max-width:768px){ /*處理畫面比例在768的破圖（解決某些手機開起來跑版）*/
+    #map{
+        margin-bottom: 54px;
+		
+    }
+	h1{
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+    
+}

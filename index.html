@@ -1,0 +1,170 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans:ital@1&display=swap" rel="stylesheet">   
+        <link rel="icon" href="image/beverage.ico">
+        <!--加進來的css都要打在style.css上面-->
+        <link rel="stylesheet" href="CSS\style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c0d99769fb.js" crossorigin="anonymous"></script>
+        
+        <title>飲料通大企劃</title> <!--網站在分頁上的名字-->
+    </head>
+    <body>
+        <header> <!--拿來當flag用,因為要調nav的style需要訂個位置-->
+            <div class='container'>
+                <nav class="navbar navbar-expand-lg navbar-light"> <!--最上方的導覽列(bootstrap.navbar),要加底色的話,空一格後加在light後面-->
+                    <a class="navbar-brand" href="#">
+                        <img src='image/beverage.png'>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>  <!--螢幕縮小或手機下拉的那個botton-->
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                      
+                        <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-item active"> <!--active表示可以互動的?(待商榷)-->
+                                <a class="nav-link" href="index.html">主頁<span class="sr-only">(current)</span></a>
+                            </li>
+                            
+                            <li class="nav-item"> <!--正常的menu-->
+                                <a class="nav-link" href="q&A.html">常見問題</a>
+                            </li>
+
+                            <li class="nav-item dropdown"> <!--看到dropdown表示要做下拉式的menu,下面會再做一個dropdown class-->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    各式店家
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--下拉之後裡面的東西-->
+                                    <a class="dropdown-item" href="https://tw.tp-tea.com/">茶湯會</a>
+                                    <a class="dropdown-item" href="https://order.nidin.shop/brand/50lantea">50嵐</a>
+                                    <a class="dropdown-item" href="https://www.chingshin.tw/news.php">清心福全</a>
+                                    <a class="dropdown-item" href="http://www.teas.com.tw/products.php">teas</a>
+                                    <a class="dropdown-item" href="https://www.dayungs.com/">大苑子</a>
+                                    <a class="dropdown-item" href="https://www.milkshoptea.com/products.php">迷克夏</a>
+                                    <a class="dropdown-item" href="https://www.coco-tea.com/">coco</a>
+                                    <a class="dropdown-item" href="https://www.ipartea.com/">茶聚</a>
+                                    <a class="dropdown-item" href="http://www.shangyulin.com.tw/love_share.php">上宇林</a>
+                                    <a class="dropdown-item" href="https://www.chatime.com.tw/zh/">日出茶太</a>
+                                    <a class="dropdown-item" href="https://www.bubblelee.com.tw/">李圓圓</a>
+                                    <a class="dropdown-item" href="http://www.kingyo.com.tw/other/index.aspx?kind=3&kind2=13&shop=kingtea168">清玉</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">其他...</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#btm">聯絡我們</a>
+                            </li>
+                        </ul>
+                        
+                        <form class="form-inline my-2 my-lg-0"> <!--右上那塊搜尋-->
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id='firstBlock'> <!--第一塊要做的(把要做的分區塊)-->
+            <div class='jumbotron'> <!--bootstrap的廣告看板(灰色那塊)-->
+                <div class='container'> <!--讓網站排版置中 類似一個容器的概念-->
+                    <div class='row'>
+                        <div class="col-md-12">
+                        <h1>大桃園飲料通</h1>  <!--標題-->
+                        <p class='lead'>幫你找出附近200m飲料店</p> <!--小標-->
+                        <a class='btn' href='searchResult.html'>開始搜尋</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='second'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-8 offset-md-2 text-center'>
+                        <h2>搜尋附近飲料店!</h2>
+                        <div class='row'>
+                            <div class="col-md-4">
+                                <img src='image/images.jpg'>
+                                <h3>哈囉你好!</h3>
+                            </div>
+                            <div class="col-md-8 text-left">
+                                <p class="lead">點選開始搜尋即會立刻顯示附近擁有的飲料店</p>      
+                                <p>目前只收錄連鎖飲料店哦</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <section id="email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h3>加入我們的大家庭</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-left">
+                        <p>讓你得到我們的最新資訊</p>
+                        <div class="input-group mb-3"> <!--bootstrap上支援的email提交空格格式-->
+                            <!-- <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">email</span>
+                            </div> -->
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="電子郵件"> <!--placeholder=淺底的那個字 -->
+                            <br>
+                        </div>
+                        <a class='btn' href='mailto:zyx024789@gmail.com'>送出</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-left">
+                        <img src="image/drink.png">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4 text-left">
+                        <h4>連結</h4>
+                        <ul>
+                            <li><a href="index.html">主頁</a></li>
+                            <!-- <li><a href="q&A.html">常見問題</a></li> -->
+                        </ul>
+                        <ul>
+                            <!-- <li><a href="#">各式店家</a></li> -->
+                            <li><a href="q&A.html">常見問題</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 text-left">
+                        <div id="btm"></div>
+                        <h4>聯絡我們</h4>
+                        <p>元智大學1401A 我不會在<br>
+                            Phone : 0987654321<br>
+                            E-mail : <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

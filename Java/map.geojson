@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "features":[
+    {
+        "type": "Feature",
+        "geometry":{
+            "type": "Point",
+            "coordinates": [24.96524, 121.26108]
+        },
+        "properties":{
+            "id": 1,
+            "name": "茶湯會-榮民店",
+            "site": "320桃園市中壢區榮民路133號"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry":{
+            "type": "Point",
+            "coordinates": [24.96541, 121.26122]
+        },
+        "properties":{
+            "id": 2,
+            "name": "可不可熟成紅茶-內壢榮民店",
+            "site": "320070桃園市中壢區榮民路123號"
+        }
+    }
+
+  
+    ]
+}

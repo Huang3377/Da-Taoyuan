@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans:ital@1&display=swap" rel="stylesheet">   
+        <link rel="icon" href="image/Q&A.ico">
+        <!--加進來的css都要打在style.css上面-->
+        <link rel="stylesheet" href="CSS\Q&A.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c0d99769fb.js" crossorigin="anonymous"></script>
+        
+        <title>常見問題Q&A</title> <!--網站在分頁上的名字-->
+    </head>
+    <body>
+
+        <header> <!--拿來當flag用,因為要調nav的style需要訂個位置-->
+            <div class='container'>
+                <nav class="navbar navbar-expand-lg navbar-light"> <!--最上方的導覽列(bootstrap.navbar),要加底色的話,空一格後加在light後面-->
+                    <a class="navbar-brand" href="#">
+                        <img src='image/Q&A.png'>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>  <!--螢幕縮小或手機下拉的那個botton-->
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                      
+                        <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-item active"> <!--active表示可以互動的?(待商榷)-->
+                                <a class="nav-link" href="index.html">主頁<span class="sr-only">(current)</span></a>
+                            </li>
+                            
+                            <li class="nav-item"> <!--正常的menu-->
+                                <a class="nav-link" href="q&A.html">常見問題</a>
+                            </li>
+
+                            <li class="nav-item dropdown"> <!--看到dropdown表示要做下拉式的menu,下面會再做一個dropdown class-->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    各式店家
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!--下拉之後裡面的東西-->
+                                    <a class="dropdown-item" href="https://tw.tp-tea.com/">茶湯會</a>
+                                    <a class="dropdown-item" href="https://order.nidin.shop/brand/50lantea">50嵐</a>
+                                    <a class="dropdown-item" href="https://www.chingshin.tw/news.php">清心福全</a>
+                                    <a class="dropdown-item" href="http://www.teas.com.tw/products.php">teas</a>
+                                    <a class="dropdown-item" href="https://www.dayungs.com/">大苑子</a>
+                                    <a class="dropdown-item" href="https://www.milkshoptea.com/products.php">迷克夏</a>
+                                    <a class="dropdown-item" href="https://www.coco-tea.com/">coco</a>
+                                    <a class="dropdown-item" href="https://www.ipartea.com/">茶聚</a>
+                                    <a class="dropdown-item" href="http://www.shangyulin.com.tw/love_share.php">上宇林</a>
+                                    <a class="dropdown-item" href="https://www.chatime.com.tw/zh/">日出茶太</a>
+                                    <a class="dropdown-item" href="https://www.bubblelee.com.tw/">李圓圓</a>
+                                    <a class="dropdown-item" href="http://www.kingyo.com.tw/other/index.aspx?kind=3&kind2=13&shop=kingtea168">清玉</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="#btm">聯絡我們</a>
+                            </li>
+                        </ul>
+                        
+                        <form class="form-inline my-2 my-lg-0"> <!--右上那塊搜尋-->
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="firstBlock" style="padding:0">
+            <div class="container-fluid join_c02">
+                <div class="container " style="padding-top:50px;">
+                    <div id="join_qa qaContent" class="row">
+                        <div class="col-md-9">
+                            
+                            <div class="join_qa_list">
+                                <div class="join_qa_list_q">
+                                    <h1><img src="image/Q.png"> 詢問受訪者喝飲料的頻率</h1>
+                                    <img src="image/常見問題1.png">
+                                </div>
+                                <div class="join_qa_list_a" style="display: block;">
+                                    <p>&emsp;&emsp;從這個圖表我們可以看到約莫90%的人都有喝飲料的習慣，且有40%經常喝飲料，考慮到平時在查找飲料店遇到的諸多問題，因此我們將期末專題的主題訂為設計一個「提供周圍飲料店家資訊的網站」，以在地圖上進行標記的方式呈現店家的所在位置，並結合:
+                                        </br>a.設置各種篩選條件，如距離
+                                        </br>b.隨機推薦店家
+                                        </br>c.隨機推薦飲料 等功能
+                                    </p>
+                                </div>
+                            </div><!--/join_qa_list-->
+                            
+                            
+                            <div class="join_qa_list">
+                                <div class="join_qa_list_q">
+                                    <h1><img src="image/Q.png"> 受訪者是否偏好飲用連鎖店？</h1>
+                                    <img src="image/常見問題2.png">
+                                </div>
+                                <div class="join_qa_list_a" style="display: block;">
+                                    <p>&emsp;&emsp;由上圖可知大多數人偏好連鎖的店家，所以在地圖的上的標記我們計畫用店家相對的icon標記，讓使用者更容易注意到符合自己喜好的店家</p>
+                                </div>
+                            </div><!--/join_qa_list-->
+                            
+                            
+                            <div class="join_qa_list">
+                                <div class="join_qa_list_q">
+                                    <h1><img src="image/Q.png"> 了解受訪者偏好用何種方使使用？</h1>
+                                    <img src="image/常見問題3.png">
+                                </div>
+                                <div class="join_qa_list_a" style="display: block;">
+                                    <p>&emsp;&emsp;由於我們認為查找飲料店功能的使用頻率應該是偏高的，因此原定是以APP的方式呈現，但是從上面的圖表可以看到大部分的人都沒有為了查找飲料而下載APP，所以我們將改成以網頁的方式呈現，也因此多了不佔手機記憶體的好處</p>
+                                </div>
+                            </div><!--/join_qa_list-->
+                            
+                            
+                            <div class="join_qa_list">
+                                <div class="join_qa_list_q">
+                                    <h1><img src="image/Q.png"> 了解距離因素是否會影響受訪者的購買意願</h1>
+                                    <img src="image/常見問題4.png">
+                                </div>
+                                <div class="join_qa_list_a" style="display: block;">
+                                    <p>&emsp;&emsp;從這個圖表可以看到飲料店的距離會影響大部分人的消費意願，所以進入網頁以後我們將顯示距離目前位置一定範圍內的商家</p>
+                                </div>
+                            </div><!--/join_qa_list-->
+                            
+                            
+                            <div class="join_qa_list">
+                                <div class="join_qa_list_q">
+                                    <h1><img src="image/Q.png"> 了解受訪者的選擇障礙</h1>
+                                    <img src="image/常見問題5.png">
+                                </div>
+                                <div class="join_qa_list_a" style="display: block;">
+                                    <p>&emsp;&emsp;由圖表可知多數人在挑選飲料品項上以及店家都有一些困擾，為了解決這樣的問題，
+                                                   如前面所述，我們將提供距離最短店家的顯示，也預計提供隨機挑選指定範圍內店家
+                                                   和飲料的功能，未來也可能依據使用者需求增加其他篩選條件</p>
+                                </div>
+                            </div> <!--/join_qa_list-->
+                            
+                                
+                        </div>
+                    </div>  <!--/join_qa-->
+
+                </div>  <!--/container-->
+            </div>  <!--/container_fluid-->
+
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-left">
+                        <img src="image/drink.png">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4 text-left">
+                        <h4>連結</h4>
+                        <ul>
+                            <li><a href="index.html">主頁</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="q&A.html">常見問題</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 text-left">
+                        <div id="btm"></div>
+                        <h4>聯絡我們</h4>
+                        <p>元智大學1401A 我不會在<br>
+                            Phone : 0987654321<br>
+                            E-mail : <a href="mailto:xxx@gmail.com">xxx@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
