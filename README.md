@@ -1,0 +1,2 @@
+- 搜尋結果利用json建立資料庫配上gmap提供的API用javascript實作完成
+- Create a Database Using JSON Search Results and Implement with JavaScript Using the Google Maps API
